@@ -1,0 +1,6 @@
+%ul.color-list
+  - colors.each do |color|
+    %li.color
+      %span ##{color}
+      = link_to 'copy', '#', data: { color: color }
+

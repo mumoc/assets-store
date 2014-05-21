@@ -1,0 +1,5 @@
+.captioned[title]:before {
+  content: attr(title);
+  display: block;
+}
+
