@@ -1,14 +1,11 @@
 %section#branding
-  .logo
-    = link_to '#' do
-      = image_tag 'crowd.jpg', alt: 'Crowd Interactive'
+  .container
+    .logo
+      = link_to '#' do
+        = image_tag 'crowd.jpg', alt: 'Crowd Interactive'
 
-  %article
-    %h1 Crowd Interactive
-
-    .content
-      %p
-        Lorem Ipsum dolor
+    %article.content
+      %h1 Crowd Interactive
 
       %p
         Lorem Ipsum dolor
@@ -19,6 +16,9 @@
       %p
         Lorem Ipsum dolor
 
-    %footer
-      = render 'main_nav', klass: 'branding'
+      %p
+        Lorem Ipsum dolor
+
+      %footer
+        = render 'main_nav', klass: 'branding'
 
