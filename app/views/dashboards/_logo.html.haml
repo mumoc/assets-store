@@ -1,15 +1,16 @@
 %section#logo
-  %h1 Logo
+  .container
+    %h1 Logo
 
-  %article#crowd-interactive-logo
-    %header= image_tag 'crowd_interactive', alt: 'Crowd Interactive Logo'
+    %article#crowd-interactive-logo
+      %header= image_tag 'crowd_interactive', alt: 'Crowd Interactive Logo'
 
-    - %w{color white black}.each do |color|
-      = render 'download_links', title: color, file: 'crowd-interactive-logo'
+      - %w{color white black}.each do |color|
+        = render 'download_links', title: color, file: 'crowd-interactive-logo'
 
-  %article#crowd-logo
-    %header= image_tag 'crowd', alt: 'Crowd Logo'
+    %article#crowd-logo
+      %header= image_tag 'crowd', alt: 'Crowd Logo'
 
-    - %w{color white black}.each do |color|
-      = render 'download_links', title: color, file: 'c-logo'
+      - %w{color white black}.each do |color|
+        = render 'download_links', title: color, file: 'c-logo'
 

@@ -1,0 +1,14 @@
+#branding {
+  background: $gray-light;
+
+  .logo {
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+  }
+
+  .content {
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+  }
+}
+

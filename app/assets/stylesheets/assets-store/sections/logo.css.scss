@@ -1,3 +1,26 @@
+#logo {
+  background: $green-light;
+
+  h1 {
+    @include make-xs-column(12);
+  }
+
+  article {
+    @include make-sm-column(10);
+    @include make-sm-column-offset(1);
+    @include make-xs-column(12);
+
+    header {
+      @include make-xs-column(12);
+    }
+
+    .captioned {
+      @include make-sm-column(4);
+      @include make-xs-column(12);
+    }
+  }
+}
+
 .captioned[title]:before {
   content: attr(title);
   display: block;
