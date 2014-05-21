@@ -4,6 +4,7 @@ ruby '2.1.1'
 gem 'rails', '4.1'
 
 gem 'asset_sync'
+gem 'bootstrap-sass'
 gem 'figaro'
 gem 'haml-rails'
 gem 'jbuilder', '~> 1.2'
