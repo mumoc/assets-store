@@ -1,6 +1,6 @@
 %ul.color-list
   - colors.each do |color|
     %li
-      = link_to '#', class: 'color', style: "background: ##{color}" do
-        %span ##{color}
+      = link_to '#', class: 'color', style: "background: #{color}", data: { 'clipboard-text' => color } do
+        %span= color
 

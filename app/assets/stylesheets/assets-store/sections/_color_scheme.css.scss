@@ -32,7 +32,7 @@
     position: absolute;
   }
 
-  &:hover {
+  &:hover, &.zeroclipboard-is-hover {
     margin: 0px;
     padding: 50px;
 
