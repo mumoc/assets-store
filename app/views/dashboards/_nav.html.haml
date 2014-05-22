@@ -2,3 +2,9 @@
   .container
     = render 'main_nav', klass: 'navigation'
 
+- content_for :scripts do
+  :coffee
+    $ ->
+      ($ '#navigation').affix
+        offset:
+          top: -> ($ '#branding').outerHeight()
