@@ -1,4 +1,7 @@
-a { text-decoration: underline }
+a {
+  @include transition(all .3s ease-out);
+  text-decoration: underline;
+}
 
 ul { list-style-type: none }
 
