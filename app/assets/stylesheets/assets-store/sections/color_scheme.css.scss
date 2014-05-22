@@ -1,25 +1,54 @@
 #color-scheme {
   background: $gray-light;
+  color: $green-light;
+  padding: 50px;
 
   h1 {
     @include make-xs-column(12);
   }
 
-  article {
-    @include make-sm-column(10);
-    @include make-sm-column-offset(1);
-    @include make-xs-column(12);
+}
 
-    header {
-      @include make-xs-column(12);
-    }
+.color-section {
+  @include make-sm-column(10);
+  @include make-sm-column-offset(1);
+  @include make-xs-column(12);
 
-    .color-list {
-      @include make-xs-column(12);
+  h2 { text-transform: uppercase }
+}
 
-      .color {
-        @include make-xs-column(2);
-      }
+.color-list {
+  list-style-type: none;
+
+  li {
+    display: inline-flex;
+    text-align: center;
+  }
+}
+
+.color {
+  @include border-radius(100%);
+
+  display: block;
+  margin: 25px;
+  padding: 25px;
+  position: relative;
+
+  span {
+    color: $white;
+    display: none;
+    left: 25%;
+    line-height: 0;
+    position: absolute;
+  }
+
+  &:hover {
+    margin: 0px;
+    padding: 50px;
+
+    span {
+      display: block;
     }
   }
 }
+
