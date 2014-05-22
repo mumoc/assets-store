@@ -1,12 +1,32 @@
 #navigation {
   background: $green-dark;
+  color: $white;
 
   h2 {
-    @include make-xs-column(6);
+    @include make-sm-column(6);
+
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0px;
+  }
+}
+
+.navigation {
+  @include make-sm-column(6);
+
+  line-height: 60px;
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+
+    &:after {
+      content: '|';
+      padding: 10px;
+    }
+
+    &:last-of-type:after { content: none }
   }
 
-  .navigation {
-    @include make-xs-column(6);
-  }
 }
 
