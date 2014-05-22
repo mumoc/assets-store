@@ -1,5 +1,9 @@
 #branding {
   background: $gray-light;
+  color: $green-light;
+  padding: 100px 50px;
+
+  h1, h2 { text-transform: uppercase }
 
   .logo {
     @include make-xs-column(12);
@@ -9,6 +13,17 @@
   .content {
     @include make-xs-column(12);
     @include make-sm-column(6);
+  }
+}
+
+.branding {
+  a {
+    color: $green-light;
+    display: block;
+    text: {
+      decoration: underline;
+      transform: uppercase;
+    }
   }
 }
 
