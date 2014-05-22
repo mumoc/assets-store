@@ -1,3 +1,9 @@
 = javascript_include_tag 'application'
 = yield :scripts
 
+:coffee
+  $ ->
+    skrollrInstance = skrollr.init()
+    skrollr.menu.init skrollrInstance
+
+
