@@ -1,10 +1,19 @@
 #templates {
   background: $gray-light;
+  color: $green-light;
+  padding: 50px;
 
   article {
     @include make-sm-column(5);
     @include make-sm-column-offset(1);
     @include make-xs-column(12);
+  }
+
+  ul { list-style-type: none }
+
+  a {
+    color: $green-light;
+    text-decoration: underline;
   }
 }
 
