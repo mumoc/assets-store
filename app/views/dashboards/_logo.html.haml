@@ -2,13 +2,13 @@
   .container
     %h1 Logo
 
-    %article#crowd-interactive-logo
+    %article.logo-section#crowd-interactive-logo
       %header= image_tag 'crowd_interactive', alt: 'Crowd Interactive Logo'
 
       - %w{color white black}.each do |color|
         = render 'download_links', title: color, file: 'crowd-interactive-logo'
 
-    %article#crowd-logo
+    %article.logo-section#crowd-logo
       %header= image_tag 'crowd', alt: 'Crowd Logo'
 
       - %w{color white black}.each do |color|
