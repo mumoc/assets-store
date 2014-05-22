@@ -2,14 +2,14 @@
   background: $gray-light;
   color: $green-light;
 
-  .logo {
-    @include make-xs-column(12);
-    @include make-sm-column(6);
+  .container {
+    background: $gray-light image-url('branding_bg.png') no-repeat;
   }
 
   .content {
     @include make-xs-column(12);
     @include make-sm-column(6);
+    @include make-sm-column-offset(6);
   }
 }
 

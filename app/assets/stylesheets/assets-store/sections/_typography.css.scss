@@ -1,6 +1,10 @@
 #typography {
-  background: $blue;
+  background-color: $blue;
   color: $white;
+
+  .container {
+    background: image-url('typography_bg.png') center no-repeat;
+  }
 
   article {
     @include make-sm-column(5);

@@ -11,3 +11,16 @@
   a { color: $green-light }
 }
 
+.header-with-logo {
+}
+
+.presentation-title:before {
+  content: image-url('presentation.png');
+  margin-right: 10px;
+}
+
+
+.document-title:before {
+  content: image-url('document.png');
+  margin-right: 10px;
+}

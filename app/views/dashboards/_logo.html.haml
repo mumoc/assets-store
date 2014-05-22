@@ -3,13 +3,13 @@
     %h1 Logo
 
     %article.logo-section#crowd-interactive-logo
-      %header= image_tag 'crowd_interactive', alt: 'Crowd Interactive Logo'
+      %header= image_tag 'crowd_interactive_logo.png', alt: 'Crowd Interactive Logo'
 
       - %w{color white black}.each do |color|
         = render 'download_links', title: color, file: 'crowd-interactive-logo'
 
     %article.logo-section#crowd-logo
-      %header= image_tag 'crowd', alt: 'Crowd Logo'
+      %header= image_tag 'crowd_logo.png', alt: 'Crowd Logo'
 
       - %w{color white black}.each do |color|
         = render 'download_links', title: color, file: 'c-logo'
