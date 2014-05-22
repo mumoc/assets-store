@@ -1,10 +1,13 @@
 #typography {
   background: $blue;
+  color: $white;
 
   article {
     @include make-sm-column(5);
     @include make-sm-column-offset(1);
     @include make-xs-column(12);
   }
+
+  a { color: $white }
 }
 

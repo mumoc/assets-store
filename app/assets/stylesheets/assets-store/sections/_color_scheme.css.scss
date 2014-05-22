@@ -1,0 +1,44 @@
+#color-scheme {
+  background: $gray-light;
+  color: $green-light;
+}
+
+.color-section {
+  @include make-sm-column(10);
+  @include make-sm-column-offset(1);
+  @include make-xs-column(12);
+}
+
+.color-list {
+  li {
+    display: inline-flex;
+    text-align: center;
+  }
+}
+
+.color {
+  @include border-radius(100%);
+
+  display: block;
+  margin: 25px;
+  padding: 25px;
+  position: relative;
+
+  span {
+    color: $white;
+    display: none;
+    left: 25%;
+    line-height: 0;
+    position: absolute;
+  }
+
+  &:hover {
+    margin: 0px;
+    padding: 50px;
+
+    span {
+      display: block;
+    }
+  }
+}
+

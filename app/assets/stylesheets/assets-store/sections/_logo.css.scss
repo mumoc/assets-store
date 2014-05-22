@@ -1,0 +1,33 @@
+#logo {
+  background: $green-light;
+  color: $white;
+}
+
+.logo-section {
+  @include make-sm-column(10);
+  @include make-sm-column-offset(1);
+  @include make-xs-column(12);
+
+  header {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.captioned {
+  @include make-xs-column(4);
+
+  &:before {
+    content: attr(title);
+    display: block;
+    margin: 10px 0;
+    text-transform: uppercase;
+  }
+
+  li {
+    margin: 5px 0;
+
+    a { color: white }
+  }
+}
+

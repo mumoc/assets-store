@@ -1,0 +1,33 @@
+#navigation {
+  background: $green-dark;
+  color: $white;
+  padding: 0;
+
+  h2 {
+    @include make-sm-column(6);
+
+    line-height: 60px;
+    margin: 0px;
+  }
+}
+
+.navigation {
+  @include make-sm-column(6);
+
+  line-height: 60px;
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:after {
+      content: '|';
+      padding: 10px;
+    }
+
+    &:last-of-type:after { content: none }
+  }
+
+}
+
