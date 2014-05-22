@@ -10,6 +10,7 @@ gem 'haml-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
 gem 'pg'
+gem 'zeroclipboard-rails'
 
 group :assets do
   gem 'coffee-rails', '~> 4.0.0'

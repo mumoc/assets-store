@@ -5,9 +5,14 @@
     %article.color-section#primary
       %h2 Primary Scheme
 
-      = render 'color_list', colors: %w{ 007f74 7dc3c1 2074bc f0901f d54926 }
+      = render 'color_list', colors: %w{ #007f74 #7dc3c1 #2074bc #f0901f #d54926 }
 
     %article.color-section#secondary
       %h2 Secondary Scheme
 
-      = render 'color_list', colors: %w{ 8ec754 dbdbbf d16c28 412716 272727 }
+      = render 'color_list', colors: %w{ #8ec754 #dbdbbf #d16c28 #412716 #272727 }
+
+#button
+- content_for :scripts do
+  :coffee
+    $ -> new ZeroClipboard ($ '.color')
