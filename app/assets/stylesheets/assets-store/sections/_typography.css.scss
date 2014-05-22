@@ -1,7 +1,6 @@
 #typography {
   background: $blue;
   color: $white;
-  padding: 50px;
 
   article {
     @include make-sm-column(5);
@@ -9,13 +8,6 @@
     @include make-xs-column(12);
   }
 
-  a {
-    color: $white;
-    text-decoration: underline;
-  }
-}
-
-.other-types {
-  list-style-type: none;
+  a { color: $white }
 }
 

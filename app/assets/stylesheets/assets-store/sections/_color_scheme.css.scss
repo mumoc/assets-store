@@ -1,25 +1,15 @@
 #color-scheme {
   background: $gray-light;
   color: $green-light;
-  padding: 50px;
-
-  h1 {
-    @include make-xs-column(12);
-  }
-
 }
 
 .color-section {
   @include make-sm-column(10);
   @include make-sm-column-offset(1);
   @include make-xs-column(12);
-
-  h2 { text-transform: uppercase }
 }
 
 .color-list {
-  list-style-type: none;
-
   li {
     display: inline-flex;
     text-align: center;

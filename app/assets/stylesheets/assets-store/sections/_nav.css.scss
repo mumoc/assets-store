@@ -1,12 +1,12 @@
 #navigation {
   background: $green-dark;
   color: $white;
+  padding: 0;
 
   h2 {
     @include make-sm-column(6);
 
     line-height: 60px;
-    text-transform: uppercase;
     margin: 0px;
   }
 }
@@ -19,6 +19,7 @@
   a {
     color: $white;
     text-transform: uppercase;
+    text-decoration: none;
 
     &:after {
       content: '|';

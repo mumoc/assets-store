@@ -1,11 +1,6 @@
 #logo {
   background: $green-light;
   color: $white;
-  padding: 50px;
-
-  h1 {
-    @include make-xs-column(12);
-  }
 }
 
 .logo-section {
@@ -21,7 +16,6 @@
 
 .captioned {
   @include make-xs-column(4);
-  list-style-type: none;
 
   &:before {
     content: attr(title);
@@ -33,10 +27,7 @@
   li {
     margin: 5px 0;
 
-    a {
-      color: white;
-      text-decoration: underline;
-    }
+    a { color: white }
   }
 }
 
