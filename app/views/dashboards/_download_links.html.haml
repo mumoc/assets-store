@@ -1,7 +1,7 @@
 %ul.captioned{ title: title }
-  %li= link_to 'Low Res (20kb)', "##{file}.low-res"
-  %li= link_to 'Medium Res (600kb)', "##{file}.med-res"
-  %li= link_to 'High Res (2mb)', "##{file}.high-res"
+  %li= download_link 'Low Res (20kb)', "logos/#{file}_#{title}_lr.png"
+  %li= download_link 'Medium Res (600kb)', "logos/#{file}_#{title}_mr.png"
+  %li= download_link 'High Res (2mb)', "logos/#{file}_#{title}_hr.png"
   %li= link_to 'Illustrator (1mb)', "##{file}.ai"
   %li= link_to 'EPS (1mb)', "##{file}.eps"
   %li= link_to 'PDF (1mb)', "##{file}.pdf"
