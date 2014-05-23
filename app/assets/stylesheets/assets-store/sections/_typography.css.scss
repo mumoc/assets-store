@@ -6,12 +6,6 @@
     background: image-url('typography_bg.png') center no-repeat;
   }
 
-  article {
-    @include make-sm-column(5);
-    @include make-sm-column-offset(1);
-    @include make-xs-column(12);
-  }
-
   a {
     color: $white;
     font-size: 12px;
@@ -28,11 +22,22 @@
 }
 
 #oswald {
-  font-family: 'Roboto';
+  font-family: 'Oswald';
+
+  h2, h3 { font-weight: 400 }
+
   p { font-size: 14px }
 }
 
+#other-typefaces {
+  @include make-xs-column(12);
+}
+
 .type-section {
+  @include make-sm-column(5);
+  @include make-sm-column-offset(1);
+  @include make-xs-column(12);
+
   h2 {
     font-size: 30px;
     font-weight: 500;

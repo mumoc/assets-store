@@ -2,7 +2,7 @@
 @include declare-font-face('Roboto', 'Roboto-Medium', 500);
 @include declare-font-face('Roboto', 'Roboto-Light', 200);
 
-/*@include declare-font-face('Oswald', 'Oswald-Regular', 400);*/
-/*@include declare-font-face('Oswald', 'Oswald-Bold', 500);*/
-/*@include declare-font-face('Oswald', 'Oswald-Light', 200);*/
+@include declare-ttf-only-font-face('Oswald', 'Oswald-Regular', 400);
+@include declare-ttf-only-font-face('Oswald', 'Oswald-Bold', 500);
+@include declare-ttf-only-font-face('Oswald', 'Oswald-Light', 200);
 
