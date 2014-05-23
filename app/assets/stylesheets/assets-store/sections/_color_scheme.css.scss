@@ -1,17 +1,28 @@
 #color-scheme {
   background: $gray-light;
-  color: $green-light;
+  color: $gray-dark;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 500;
+  }
 }
 
 .color-section {
   @include make-sm-column(10);
   @include make-sm-column-offset(1);
   @include make-xs-column(12);
+
+  h2 {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 .color-list {
   li {
     display: inline-flex;
+    margin: 0 10px;
     text-align: center;
   }
 }
@@ -27,7 +38,9 @@
   span {
     color: $white;
     display: none;
-    left: 25%;
+    font-weight: 200;
+    font-size: 16px;
+    left: 20%;
     line-height: 0;
     position: absolute;
   }
