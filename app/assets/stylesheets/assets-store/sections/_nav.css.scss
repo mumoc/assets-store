@@ -1,12 +1,14 @@
 #navigation {
-  background: $green-dark;
+  background: $gray 85%;
   color: $white;
+  font-size: 14px;
   padding: 0;
 
   h2 {
     @include make-sm-column(6);
 
-    line-height: 60px;
+    line-height: 50px;
+    font-size: 14px;
     margin: 0px;
   }
 
@@ -20,7 +22,7 @@
 .navigation {
   @include make-sm-column(6);
 
-  line-height: 60px;
+  line-height: 50px;
 
   a {
     color: $white;
