@@ -6,6 +6,7 @@
 
   h2 {
     @include make-sm-column(6);
+    @extend .hidden-xs;
 
     line-height: 50px;
     font-size: 14px;

@@ -1,5 +1,7 @@
 #branding {
-  background: $gray-light image-url('branding_bg.png') 0 0 no-repeat;
+  @media screen and (min-width: $screen-xs) {
+    background: $gray-light image-url('branding_bg.png') 0 0 no-repeat;
+  }
   margin-top: 50px;
   padding-bottom: 100px;
 
