@@ -9,6 +9,7 @@ gem 'figaro'
 gem 'haml-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
+gem 'modernizr-rails'
 gem 'pg'
 gem 'zeroclipboard-rails'
 
