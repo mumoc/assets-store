@@ -1,4 +1,10 @@
 %section#navigation{ data: { spy: 'affix' } }
   .container
-    = render 'main_nav', klass: 'navigation'
+    %h2 Our branding
 
+    %nav.navigation
+      = link_to 'Logo', '#logo'
+      = link_to 'Color scheme', '#color-scheme'
+      = link_to 'Typography', '#typography'
+      = link_to 'Templates', '#templates'
+      = link_to 'Wallpapers', '#wallpapers'
