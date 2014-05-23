@@ -1,6 +1,6 @@
 #templates {
   background: $gray-light;
-  color: $green-light;
+  color: $gray-dark;
 
   article {
     @include make-sm-column(5);
@@ -8,7 +8,20 @@
     @include make-xs-column(12);
   }
 
-  a { color: $green-light }
+  a {
+    color: $gray-dark;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 500;
+  }
 }
 
 .header-with-logo {
