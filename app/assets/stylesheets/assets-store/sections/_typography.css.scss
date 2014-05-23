@@ -12,6 +12,37 @@
     @include make-xs-column(12);
   }
 
-  a { color: $white }
+  a {
+    color: $white;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+
+#roboto {
+  p { font-size: 12px }
+}
+
+#oswald {
+  font-family: 'Roboto';
+  p { font-size: 14px }
+}
+
+.type-section {
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  p { font-weight: 200 }
 }
 
