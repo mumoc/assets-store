@@ -6,7 +6,7 @@ body {
 
 a {
   @include transition(all .3s ease-out);
-  text-decoration: underline;
+  &:hover { text-decoration: underline }
 }
 
 ul { list-style-type: none }
