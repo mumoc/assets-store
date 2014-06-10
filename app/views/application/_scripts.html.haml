@@ -5,5 +5,6 @@
   $ ->
     skrollrInstance = skrollr.init()
     skrollr.menu.init skrollrInstance
-    $.stellar horizontalScrolling: false
+    !/^((?!chrome).)*safari/i.test(navigator.userAgent) and $.stellar(horizontalScrolling: false)
+
 
